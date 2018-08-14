@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Derby (Remote) - cast@localhost">
+  <database-model serializer="dbm" rdbms="DERBY" format-version="4.9">
+    <root id="1">
+      <ServerVersion>10.14</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="APP"/>
+    <schema id="3" parent="1" name="NULLID"/>
+    <schema id="4" parent="1" name="SQLJ"/>
+    <schema id="5" parent="1" name="SYS"/>
+    <schema id="6" parent="1" name="SYSCAT"/>
+    <schema id="7" parent="1" name="SYSCS_DIAG"/>
+    <schema id="8" parent="1" name="SYSCS_UTIL"/>
+    <schema id="9" parent="1" name="SYSFUN"/>
+    <schema id="10" parent="1" name="SYSIBM"/>
+    <schema id="11" parent="1" name="SYSPROC"/>
+    <schema id="12" parent="1" name="SYSSTAT"/>
+    <schema id="13" parent="1" name="USER">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <table id="14" parent="13" name="TBL_CINEMA"/>
+    <table id="15" parent="13" name="TBL_COMENTS"/>
+    <table id="16" parent="13" name="TBL_MOVIE"/>
+    <table id="17" parent="13" name="TBL_ORDER"/>
+    <table id="18" parent="13" name="TBL_SHOWTIME"/>
+    <table id="19" parent="13" name="TBL_USR"/>
+    <column id="20" parent="14" name="LOCATION">
+      <Position>1</Position>
+      <DataType>VARCHAR(100)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="21" parent="14" name="CAPACITY">
+      <Position>2</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="22" parent="14" name="AMENITIES">
+      <Position>3</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="23" parent="14" name="SQL180806202224850">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>LOCATION</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="24" parent="14" name="LOCATION_PK">
+      <ColNames>LOCATION</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="25" parent="15" name="NICKNAME">
+      <Position>1</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="15" name="RATING">
+      <Position>2</Position>
+      <DataType>VARCHAR(1)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="27" parent="15" name="TITLE">
+      <Position>3</Position>
+      <DataType>VARCHAR(40)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="15" name="COMDATE">
+      <Position>4</Position>
+      <DataType>DATE|91s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="15" name="COMTIME">
+      <Position>5</Position>
+      <DataType>TIME|92s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="30" parent="15" name="REVIEWS">
+      <Position>6</Position>
+      <DataType>VARCHAR(1000)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="31" parent="15" name="SQL180806202225440">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NICKNAME
+COMDATE
+COMTIME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="32" parent="15" name="SQL180806202225440">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>NICKNAME
+COMDATE
+COMTIME</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="16" name="TITLE">
+      <Position>1</Position>
+      <DataType>VARCHAR(40)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="16" name="POSTER">
+      <Position>2</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="35" parent="16" name="ACTORS">
+      <Position>3</Position>
+      <DataType>VARCHAR(300)|12s</DataType>
+    </column>
+    <column id="36" parent="16" name="GENRE">
+      <Position>4</Position>
+      <DataType>VARCHAR(300)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="37" parent="16" name="DIRECTOR">
+      <Position>5</Position>
+      <DataType>VARCHAR(50)|12s</DataType>
+    </column>
+    <column id="38" parent="16" name="SYNOPSIS">
+      <Position>6</Position>
+      <DataType>VARCHAR(1000)|12s</DataType>
+    </column>
+    <column id="39" parent="16" name="AGEOFRATING">
+      <Position>7</Position>
+      <DataType>VARCHAR(3)|12s</DataType>
+    </column>
+    <column id="40" parent="16" name="RATING">
+      <Position>8</Position>
+      <DataType>VARCHAR(4)|12s</DataType>
+    </column>
+    <column id="41" parent="16" name="NUMBEROFRATING">
+      <Position>9</Position>
+      <DataType>VARCHAR(10)|12s</DataType>
+    </column>
+    <column id="42" parent="16" name="RELASEDATE">
+      <Position>10</Position>
+      <DataType>DATE|91s</DataType>
+    </column>
+    <index id="43" parent="16" name="SQL180806202224550">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>TITLE</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="44" parent="16" name="TITLE_PK">
+      <ColNames>TITLE</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="45" parent="17" name="PRIMEKYNUMBER">
+      <Position>1</Position>
+      <DataType>SMALLINT|5s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="46" parent="17" name="ACCOUNTNAME">
+      <Position>2</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="17" name="TITLE">
+      <Position>3</Position>
+      <DataType>VARCHAR(40)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="48" parent="17" name="TICKETS">
+      <Position>4</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="49" parent="17" name="LOCATION">
+      <Position>5</Position>
+      <DataType>VARCHAR(100)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="50" parent="17" name="SHOWINGDATE">
+      <Position>6</Position>
+      <DataType>DATE|91s</DataType>
+    </column>
+    <column id="51" parent="17" name="SHOWINGTIME">
+      <Position>7</Position>
+      <DataType>TIME|92s</DataType>
+    </column>
+    <index id="52" parent="17" name="SQL180806202225840">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>PRIMEKYNUMBER</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="53" parent="17" name="SQL180806202225843">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ACCOUNTNAME</ColNames>
+    </index>
+    <index id="54" parent="17" name="SQL180806202225842">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>LOCATION</ColNames>
+    </index>
+    <key id="55" parent="17" name="SQL180806202225840">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>PRIMEKYNUMBER</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="56" parent="17" name="FK_ACCOUNT">
+      <ColNames>ACCOUNTNAME</ColNames>
+      <RefSchemaName>USER</RefSchemaName>
+      <RefTableName>TBL_USR</RefTableName>
+      <RefKeyName>ACCOUNTNAME_PK</RefKeyName>
+      <RefColNames>ACCOUNTNAME</RefColNames>
+    </foreign-key>
+    <foreign-key id="57" parent="17" name="FK_LOCATIONS">
+      <ColNames>LOCATION</ColNames>
+      <RefSchemaName>USER</RefSchemaName>
+      <RefTableName>TBL_CINEMA</RefTableName>
+      <RefKeyName>LOCATION_PK</RefKeyName>
+      <RefColNames>LOCATION</RefColNames>
+    </foreign-key>
+    <column id="58" parent="18" name="PRIMEKYNUMBER">
+      <Position>1</Position>
+      <DataType>SMALLINT|5s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+      <DefaultExpression>AUTOINCREMENT: start 1 increment 1</DefaultExpression>
+    </column>
+    <column id="59" parent="18" name="TITLE">
+      <Position>2</Position>
+      <DataType>VARCHAR(40)|12s</DataType>
+    </column>
+    <column id="60" parent="18" name="LOCATION">
+      <Position>3</Position>
+      <DataType>VARCHAR(100)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="61" parent="18" name="SEATLEFT">
+      <Position>4</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="62" parent="18" name="SHOWINGDATE">
+      <Position>5</Position>
+      <DataType>DATE|91s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="63" parent="18" name="SHOWINGTIME">
+      <Position>6</Position>
+      <DataType>TIME|92s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="64" parent="18" name="SQL180807011101170">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>LOCATION
+SHOWINGDATE
+SHOWINGTIME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <index id="65" parent="18" name="SQL180807011101171">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>LOCATION</ColNames>
+    </index>
+    <key id="66" parent="18" name="SQL180807011101170">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>LOCATION
+SHOWINGDATE
+SHOWINGTIME</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="67" parent="18" name="FK_LOCATION">
+      <ColNames>LOCATION</ColNames>
+      <RefSchemaName>USER</RefSchemaName>
+      <RefTableName>TBL_CINEMA</RefTableName>
+      <RefKeyName>LOCATION_PK</RefKeyName>
+      <RefColNames>LOCATION</RefColNames>
+    </foreign-key>
+    <column id="68" parent="19" name="ACCOUNTNAME">
+      <Position>1</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="69" parent="19" name="PASSWORD">
+      <Position>2</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="70" parent="19" name="EMAIL">
+      <Position>3</Position>
+      <DataType>VARCHAR(100)|12s</DataType>
+    </column>
+    <column id="71" parent="19" name="NICKNAME">
+      <Position>4</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="72" parent="19" name="FIRSTNAME">
+      <Position>5</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="73" parent="19" name="LASTNAME">
+      <Position>6</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="74" parent="19" name="BIRTHDAY">
+      <Position>7</Position>
+      <DataType>VARCHAR(30)|12s</DataType>
+    </column>
+    <column id="75" parent="19" name="FAVOURITEGENRE">
+      <Position>8</Position>
+      <DataType>VARCHAR(1000)|12s</DataType>
+    </column>
+    <column id="76" parent="19" name="FAVOURITECAST">
+      <Position>9</Position>
+      <DataType>VARCHAR(1000)|12s</DataType>
+    </column>
+    <column id="77" parent="19" name="STATUS">
+      <Position>10</Position>
+      <DataType>VARCHAR(20)|12s</DataType>
+    </column>
+    <column id="78" parent="19" name="ROLE">
+      <Position>11</Position>
+      <DataType>VARCHAR(2)|12s</DataType>
+    </column>
+    <index id="79" parent="19" name="SQL180806202224070">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>ACCOUNTNAME</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="80" parent="19" name="ACCOUNTNAME_PK">
+      <ColNames>ACCOUNTNAME</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

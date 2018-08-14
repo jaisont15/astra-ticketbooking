@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactManager">
+    <artifact type="exploded-war" name="Assign2:war exploded">
+      <output-path>$PROJECT_DIR$/out/artifacts/Assign2_war_exploded</output-path>
+      <root id="root">
+        <element id="directory" name="WEB-INF">
+          <element id="directory" name="classes">
+            <element id="module-output" name="Assign2" />
+          </element>
+          <element id="directory" name="lib">
+            <element id="library" level="project" name="lib" />
+          </element>
+        </element>
+        <element id="javaee-facet-resources" facet="Assign2/web/Web" />
+      </root>
+    </artifact>
+  </component>
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="Derby (Remote) - cast@localhost" uuid="5c23d0ba-02c8-419f-aa10-3515aaa0c17b">
+      <driver-ref>derby.remote</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.apache.derby.jdbc.ClientDriver</jdbc-driver>
+      <jdbc-url>jdbc:derby://localhost:1527/cast;create=true</jdbc-url>
+    </data-source>
+  </component>
+  <component name="InspectionProjectProfileManager">
+    <profile version="1.0">
+      <option name="myName" value="Project Default" />
+    </profile>
+    <version value="1.0" />
+  </component>
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Assign2.iml" filepath="$PROJECT_DIR$/Assign2.iml" />
+    </modules>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="false" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+  <component name="dataSourceStorageLocal">
+    <data-source name="Derby (Remote) - cast@localhost" uuid="5c23d0ba-02c8-419f-aa10-3515aaa0c17b">
+      <database-info product="Apache Derby" version="10.14.2.0 - (1828579)" jdbc-version="4.2" driver-name="Apache Derby Network Client JDBC Driver" driver-version="10.14.1.0 - (1808820)" family="DERBY" exact-version="10.14">
+        <identifier-quote-string>&quot;</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>user</user-name>
+      <introspection-schemas>*:USER</introspection-schemas>
+    </data-source>
+  </component>
+  <component name="libraryTable">
+    <library name="Java EE 6-Java EE 6">
+      <CLASSES>
+        <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/javax.annotation.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/javax.ejb.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/javax.jms.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/javax.transaction.jar!/" />
+        <root url="jar://$PROJECT_DIR$/lib/javax.resource.jar!/" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+    </library>
+    <library name="lib">
+      <CLASSES>
+        <root url="file://$PROJECT_DIR$/WebContent/WEB-INF/lib" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES />
+      <jarDirectory url="file://$PROJECT_DIR$/WebContent/WEB-INF/lib" recursive="false" />
+    </library>
+  </component>
+</project>
